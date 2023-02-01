@@ -10,6 +10,10 @@ public class InputListener : MonoBehaviour
         float moveY = Input.GetAxis("Vertical");
 
         _playerController.Move(moveX, moveY);
+        _playerController.Rotate();
+
+        if(Input.GetMouseButtonDown(0))
+            _playerController.Shoot();
     }
 
     public void Construct(PlayerController playerController)
