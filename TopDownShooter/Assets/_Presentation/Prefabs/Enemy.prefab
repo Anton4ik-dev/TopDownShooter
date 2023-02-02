@@ -529,6 +529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   hp: 5
+  damage: 1
   radiusOfVision: 6
   healthBar: {fileID: 1367389323}
   playerLayer:

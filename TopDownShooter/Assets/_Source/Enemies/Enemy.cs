@@ -43,8 +43,10 @@ public class Enemy : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.layer == playerLayerMask && !_isDeath)
-            //Give damage to player
+        {
+            collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
             Debug.Log($"Enemy damage player on {damage}");
+        }
     }
 
     public void Move()

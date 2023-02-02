@@ -5,6 +5,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float fireForce;
     [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] private int damage;
 
     private int _enemyLayerMask;
     
@@ -17,7 +18,7 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == _enemyLayerMask)
-            collision.GetComponent<Enemy>().GetDamage(1);
+            collision.GetComponent<Enemy>().GetDamage(damage);
 
         Destroy(gameObject);
     }
