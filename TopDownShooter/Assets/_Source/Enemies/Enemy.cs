@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
@@ -16,9 +17,13 @@ public class Enemy : MonoBehaviour
     private Rigidbody2D _rb;
     private bool _isDeath;
     private int _currentHp;
+    private NavMeshAgent _agent;
 
     void Start()
     {
+        _agent = GetComponent<NavMeshAgent>();
+        _agent.updateRotation = false;
+        _agent.updateUpAxis = false;
         _player = GameObject.FindGameObjectWithTag("Player").transform;
         _currentHp = hp;
         _rb = GetComponent<Rigidbody2D>();
@@ -53,7 +58,7 @@ public class Enemy : MonoBehaviour
     {
         float distanceToPlayer = Vector2.Distance(transform.position, _player.position);
         if (distanceToPlayer <= radiusOfVision)
-            transform.position = Vector2.MoveTowards(transform.position, _player.position, speed * Time.deltaTime);
+            _agent.SetDestination(_player.transform.position);
     }
 
     
