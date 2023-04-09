@@ -1,8 +1,9 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 
-public class Enemy : MonoBehaviour
+public class MeleeEnemy : MonoBehaviour, IEnemy
 {
     [SerializeField] private float speed;
     [SerializeField] private int hp;
@@ -42,7 +43,7 @@ public class Enemy : MonoBehaviour
                 _isDeath = true;
         }
         else
-            GetComponent<SpriteRenderer>().color = Color.red;
+            StartCoroutine(Death());
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -67,5 +68,12 @@ public class Enemy : MonoBehaviour
     {
         _currentHp -= damage;
         healthBar.value = _currentHp;
+    }
+
+    public IEnumerator Death()
+    {
+        GetComponent<SpriteRenderer>().color = Color.red;
+        yield return new WaitForSeconds(3f);
+        gameObject.SetActive(false);
     }
 }

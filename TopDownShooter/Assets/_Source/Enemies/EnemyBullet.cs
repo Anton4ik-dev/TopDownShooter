@@ -1,25 +1,27 @@
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class EnemyBullet : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float fireForce;
-    [SerializeField] private LayerMask enemyLayer;
-    [SerializeField] private int damage;
-
-    private int _enemyLayerMask;
+    [SerializeField] private LayerMask playerLayer;
     
+    private int _damage;
+    private int _enemyLayerMask;
+
     private void Awake()
     {
         rb.AddForce(transform.up * fireForce, ForceMode2D.Impulse);
-        _enemyLayerMask = (int)Mathf.Log(enemyLayer.value, 2);
+        _enemyLayerMask = (int)Mathf.Log(playerLayer.value, 2);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == _enemyLayerMask)
-            collision.GetComponent<IEnemy>().GetDamage(damage);
+            collision.GetComponent<PlayerController>().TakeDamage(_damage);
 
         Destroy(gameObject);
     }
+
+    public void SetDamage(int damage) => _damage = damage;
 }
