@@ -5,11 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - ship
+  - asteroid
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - Character
   - Water
   - UI
   - Enemy
