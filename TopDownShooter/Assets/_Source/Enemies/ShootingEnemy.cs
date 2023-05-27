@@ -42,6 +42,7 @@ public class ShootingEnemy : MonoBehaviour, IEnemy
     void Update()
     {
         _rb.velocity = new Vector2();
+
         if (!_isDeath)
         {
             float distanceToPlayer = Vector2.Distance(transform.position, _player.position);
@@ -49,12 +50,15 @@ public class ShootingEnemy : MonoBehaviour, IEnemy
             {
                 Rotate();
                 _agent.SetDestination(_player.transform.position);
-            }else if( distanceToPlayer <= startShootingRadius)
+            }
+            else if (distanceToPlayer <= startShootingRadius)
             {
                 Rotate();
                 _agent.ResetPath();
-                if (!_onCooldown)
-                    StartCoroutine(Attack());
+                RaycastHit2D raycastHit = Physics2D.Raycast(_shootPoint.transform.position, _player.position, Mathf.Infinity);
+                if (raycastHit.transform?.gameObject.layer == playerLayerMask)
+                    if (!_onCooldown)
+                        StartCoroutine(Attack());
             }
             if (_currentHp <= 0)
                 _isDeath = true;
@@ -68,7 +72,6 @@ public class ShootingEnemy : MonoBehaviour, IEnemy
         if (collision.gameObject.layer == playerLayerMask && !_isDeath)
         {
             collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
-            Debug.Log($"Enemy damage player on {damage}");
         }
     }
 
