@@ -9,14 +9,24 @@ namespace CharacterSystem
     public class Bullet : MonoBehaviour
     {
         [SerializeField] private float _speed;
-        [SerializeField] private int _damage;
         [SerializeField] private Rigidbody2D _rb;
         [SerializeField] private float _lifeTime;
         [SerializeField] private LayerMask _characterLayer;
         [SerializeField] private LayerMask _enemyLayer;
 
+        private int _damage;
+
         [Inject]
         private LayerService _layerService;
+
+        public int Damage
+        {
+            get => _damage;
+            set
+            {
+                _damage = value;
+            }
+        }
 
         private void Awake()
         {

@@ -20,13 +20,13 @@ namespace CharacterSystem
             CreatePool(bulletPoolSO.PoolLength);
         }
 
-        public Bullet GetFreeElement()
+        public Bullet GetFreeElement(int damage)
         {
-            if (HasFreeElement(out Bullet element))
+            if (HasFreeElement(damage, out Bullet element))
                 return element;
 
             if (_autoExpand)
-                return CreateObject(true);
+                return CreateObject(damage, true);
 
             throw new System.Exception("No free elements");
         }
@@ -39,7 +39,7 @@ namespace CharacterSystem
                 CreateObject();
         }
 
-        private Bullet CreateObject(bool isActiveByDefault = false)
+        private Bullet CreateObject(int damage = 0, bool isActiveByDefault = false)
         {
             Bullet createdObject = _bulletFactory.Create();
             createdObject.gameObject.SetActive(isActiveByDefault);
@@ -48,7 +48,7 @@ namespace CharacterSystem
             return createdObject;
         }
 
-        private bool HasFreeElement(out Bullet element)
+        private bool HasFreeElement(int damage, out Bullet element)
         {
             for (int i = 0; i < _pool.Count; i++)
             {
@@ -57,6 +57,7 @@ namespace CharacterSystem
                     element = _pool[i];
                     _pool[i].transform.position = _container.position;
                     _pool[i].transform.rotation = _container.rotation;
+                    _pool[i].Damage = damage;
                     _pool[i].gameObject.SetActive(true);
                     return true;
                 }

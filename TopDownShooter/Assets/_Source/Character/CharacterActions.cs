@@ -12,8 +12,53 @@ namespace CharacterSystem
         private CharacterAnimator _characterAnimator;
         private BulletPool _pool;
         private float _shootDelay;
+        private int _maxHealth;
         private int _health;
+        private int _damage;
         private float _moveSpeed;
+
+        public int MaxHealth
+        {
+            get => _maxHealth;
+            set
+            {
+                _maxHealth = value;
+            }
+        }
+
+        public int Health
+        {
+            get => _health;
+            set
+            {
+                _health = value;
+                if (_health < 0)
+                {
+                    _characterAnimator.SetDead();
+                    _health = 0;
+                }
+                else if (_health > _maxHealth)
+                    _health = _maxHealth;
+            }
+        }
+
+        public float MoveSpeed
+        {
+            get => _moveSpeed;
+            set
+            {
+                _moveSpeed = value;
+            }
+        }
+
+        public int Damage
+        {
+            get => _damage;
+            set
+            {
+                _damage = value;
+            }
+        }
 
         public CharacterActions(Rigidbody2D rb, Camera mainCamera, CharacterAnimator characterAnimator, BulletPool bulletPool, CharacterDataSO characterDataSO)
         {
@@ -22,7 +67,9 @@ namespace CharacterSystem
             _characterAnimator = characterAnimator;
             _pool = bulletPool;
             _shootDelay = characterDataSO.ShootDelay;
-            _health = characterDataSO.Health;
+            _maxHealth = characterDataSO.MaxHealth;
+            _health = characterDataSO.MaxHealth;
+            _damage = characterDataSO.Damage;
             _moveSpeed = characterDataSO.MoveSpeed;
         }
 
@@ -45,21 +92,10 @@ namespace CharacterSystem
         {
             while(true)
             {
-                _pool.GetFreeElement();
+                _pool.GetFreeElement(_damage);
                 ShootAnimate(true);
                 yield return new WaitForSeconds(_shootDelay);
             }
-        }
-
-        public int TakeDamage(int damage)
-        {
-            _health -= damage;
-            if (_health < 0)
-            {
-                _characterAnimator.SetDead();
-                _health = 0;
-            }
-            return _health;
         }
 
         public void ShootAnimate(bool isShoot)

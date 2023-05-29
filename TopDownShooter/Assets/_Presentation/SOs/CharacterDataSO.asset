@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41c96725a3152cd44bebcd9d2528ff63, type: 3}
   m_Name: CharacterDataSO
   m_EditorClassIdentifier: 
-  _shootDelay: 0.5
-  _health: 100
+  _shootDelay: 0.25
+  _maxHealth: 100
+  _damage: 10
   _moveSpeed: 5
