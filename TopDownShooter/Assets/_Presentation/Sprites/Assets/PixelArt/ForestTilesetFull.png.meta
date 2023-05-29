@@ -1,0 +1,1685 @@
+fileFormatVersion: 2
+guid: 55b9f322726d751409a2c44c9fbdfd62
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ForestTilesetFull_31
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 106
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc96c6b027fab7f46b8e4b87910ecc29
+      internalID: -1344817588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_33
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 105
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf46cb58b16ecb4a96236854ffbcdc1
+      internalID: 445101393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_34
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 106
+        width: 3
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a7b6534f3f3d144a403d5c4e2a0f98
+      internalID: -1740037446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_36
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 104
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc21fb519b09194ea2504e684299e18
+      internalID: 864586790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_37
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 106
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22f672dace1b8b4d8d476edac83ea6a
+      internalID: -505757667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_38
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 106
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5407c90f75c169f4d8284f46356460ee
+      internalID: -1693415580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_95
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 9
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d40ecbcee7420743834c3f8d8922341
+      internalID: 1648468908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf08afb4dc699e4e97ef10f401e1e4f
+      internalID: -1905848107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 56
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86ec3fc7469a4243833a3e68443173b
+      internalID: -177543421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 72
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9ed0a2aff61ab4d9a3053170655dc1
+      internalID: 1157906349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 72
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099161c84abcccd4f9e27ef41f2f43d1
+      internalID: -1532170546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6871c10259ac3214f8d921608286db9f
+      internalID: 1584617336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 89
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48321b44136344b4bb2474ed52feae27
+      internalID: 530146199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 91
+        width: 42
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d14c63f3ac3e94f97ec8c59bd7f869
+      internalID: 633012938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_7
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 59
+        width: 43
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ec2a0a7b51ac34d8da2d8fc4485bc9
+      internalID: -1564886444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 72
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd117b442558ece4f99e3a73bcdc2462
+      internalID: 553282977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_9
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 69
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d925bfe61b38e45aca1c7151efca38
+      internalID: -865982434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 69
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ca289a58e97bf4997fa17cdb4f7868
+      internalID: 885923961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_11
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 59
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800d76d4fd9e05c41999f052f8e14350
+      internalID: 2036662813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_12
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 56
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab809a19bf87a8e46ad3e724eec5e1dc
+      internalID: -1432424231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_13
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 56
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e677a6c2840a9f428886104270b528e
+      internalID: 866393055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_14
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 75
+        width: 41
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cc57d74533d9b4c9302ca4b8c6d5a6
+      internalID: -1800447552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_15
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 91
+        width: 41
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5494ff231b17142801934865801856
+      internalID: -790765238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_16
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 62
+        width: 9
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04dc22763775384faa43bca4de2393c
+      internalID: 910752146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_17
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 61
+        width: 12
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c276a48caca6147409d66912e8ff5b7d
+      internalID: -179140712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 114
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb566cf839d6f149bb7efab7480ad1c
+      internalID: 1048804108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_19
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 114
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a3896c8d0e8934aa43b47b0161ef24
+      internalID: -148197885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_20
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 114
+        width: 6
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d8dcf4fcfb2154a9f25686b1306a2f
+      internalID: -1585065818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_21
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 114
+        width: 5
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1a0b30712b9d141b32d19650341c07
+      internalID: -1924855549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_22
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 123
+        width: 4
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1eba1102b59be4083290b73389592b
+      internalID: -1758335999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_23
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 122
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4334555e177da84e9bed75665b2908d
+      internalID: 117113709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_24
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 122
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc528e46438f4444bb3890d7feb09ed
+      internalID: 893587763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_25
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 123
+        width: 3
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd8d41d08fee5948983306f885d9349
+      internalID: 433553536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_26
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 123
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee18da41fbc4b9043994574aecadbcb8
+      internalID: -414937600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_27
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 125
+        width: 2
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141cea89ca75e134da8a858102ff2033
+      internalID: -1089611040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_28
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 115
+        width: 4
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcac2696f20246548a4d8ea68d4f0f9b
+      internalID: -2080335376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_29
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 113
+        width: 5
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95aef7c6fc5c4464596f8402f7d15d05
+      internalID: -1532053484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_30
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 125
+        width: 2
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d15dc13d18e544b983ebcc0c308729
+      internalID: 1837502682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_32
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 122
+        width: 2
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7c56ebac46b05489efa44196d9b109
+      internalID: -602764505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_35
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 114
+        width: 2
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fb9b634f89bd442a765d973b46ca8f
+      internalID: -151676646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_39
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 116
+        width: 2
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9829f17704a8da2499ff1342d8d24848
+      internalID: -1305193467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_40
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 124
+        width: 2
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9259e12fe54042a4298f0d0df51a5d83
+      internalID: 583925606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_41
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 124
+        width: 2
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46392a48572ca2a469e76dc920ea6f4d
+      internalID: -986131651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_42
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 113
+        width: 2
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8565e946fb24b42be61a993f9a8da8
+      internalID: 348209026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_43
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 113
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16bd4c79484bc347980c8f3762dbdf0
+      internalID: -1143167342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_44
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 122
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc4c8ac48ac66d46a6b031c38e8e8e8
+      internalID: -107445265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_45
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 124
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc48453893c29e34f96b3f19ff5e4958
+      internalID: -807590951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_46
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 125
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98cae55900e6a3145886bb0593e1f61a
+      internalID: -1816440995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_47
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 121
+        width: 5
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c564c63835ea23f4aaecc4784df269f7
+      internalID: 1353728081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_48
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 121
+        width: 5
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae964258e758b342a5bfc797592ff85
+      internalID: -1660864329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_49
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 114
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6829b62a23e5da479f903b65dbdb847
+      internalID: -271611601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_50
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 113
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd32556b0659934f8136eca8a156fa9
+      internalID: -1023616489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_51
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 115
+        width: 4
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5065a7f62c48be439a90c3228cfb64f
+      internalID: 1549202005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_52
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 114
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1755821335cfb2b42936d86b24fc894f
+      internalID: -516040586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_53
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 153
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f798f4cee19258b4a8d008b25d18e89a
+      internalID: 529141618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_54
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 145
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ac0f8ba07c0f94aadf5aacac529926
+      internalID: 1841648932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_55
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 142
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5161ddfb37d3ae04eaaf13fe8e255378
+      internalID: -500963028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_56
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 56
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf9f5209fa7bed4f9bf30771a2f30c2
+      internalID: -1372449247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_57
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 154
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fd41ee4d3c71a42a2dfa61c65700b6
+      internalID: 612651501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_58
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 148
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb195a3ea2c76a46a5c87d82361f3f3
+      internalID: -508726268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_59
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 156
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb147b869c8802e418e06bf196531082
+      internalID: 1285145097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_65
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 138
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a85f788fc5eed4e9263b353c300f7e
+      internalID: -1806997153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_66
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 137
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151db8a532b9ac54b9f2cf0eddcf606d
+      internalID: -1781605043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_60
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 133
+        width: 2
+        height: 2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f52c91c2dbd1fd40beca83fd3d4cd73
+      internalID: -1641167892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_61
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 142
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13e6b666933728499fdec40ee26837c
+      internalID: 1827062405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_62
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 146
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 383560a501c1d294882677683dd4ed4e
+      internalID: -1926768106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_63
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 145
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dbc3eb498b402c458978fa80955a6d8
+      internalID: -1182946591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_64
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 145
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69c391fa0447564c81058e4761d957a
+      internalID: -634747356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestTilesetFull_67
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 132
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68020d81655094f458c40dd41d2f3ddb
+      internalID: -738492361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ForestTilesetFull_6: 633012938
+      ForestTilesetFull_78: -1037226785
+      ForestTilesetFull_98: 1639319825
+      ForestTilesetFull_24: 893587763
+      ForestTilesetFull_25: 433553536
+      ForestTilesetFull_39: -1305193467
+      ForestTilesetFull_13: 866393055
+      ForestTilesetFull_48: -1660864329
+      ForestTilesetFull_20: -1585065818
+      ForestTilesetFull_65: -1806997153
+      ForestTilesetFull_66: -1781605043
+      ForestTilesetFull_9: -865982434
+      ForestTilesetFull_52: -516040586
+      ForestTilesetFull_88: -1432466389
+      ForestTilesetFull_34: -1740037446
+      ForestTilesetFull_49: -271611601
+      ForestTilesetFull_2: 1157906349
+      ForestTilesetFull_30: 1837502682
+      ForestTilesetFull_77: -449541245
+      ForestTilesetFull_40: 583925606
+      ForestTilesetFull_18: 1048804108
+      ForestTilesetFull_76: 1973744579
+      ForestTilesetFull_62: -1926768106
+      ForestTilesetFull_74: 2111162602
+      ForestTilesetFull_93: 1767499622
+      ForestTilesetFull_95: 1648468908
+      ForestTilesetFull_0: -1905848107
+      ForestTilesetFull_35: -151676646
+      ForestTilesetFull_63: -1182946591
+      ForestTilesetFull_86: -1723350374
+      ForestTilesetFull_16: 910752146
+      ForestTilesetFull_90: -2100944794
+      ForestTilesetFull_43: -1143167342
+      ForestTilesetFull_61: 1827062405
+      ForestTilesetFull_64: -634747356
+      ForestTilesetFull_59: 1285145097
+      ForestTilesetFull_69: -767453311
+      ForestTilesetFull_89: -435790744
+      ForestTilesetFull_53: 529141618
+      ForestTilesetFull_3: -1532170546
+      ForestTilesetFull_10: 885923961
+      ForestTilesetFull_41: -986131651
+      ForestTilesetFull_22: -1758335999
+      ForestTilesetFull_99: -1665157006
+      ForestTilesetFull_97: -2131058891
+      ForestTilesetFull_38: -1693415580
+      ForestTilesetFull_1: -177543421
+      ForestTilesetFull_17: -179140712
+      ForestTilesetFull_55: -500963028
+      ForestTilesetFull_14: -1800447552
+      ForestTilesetFull_36: 864586790
+      ForestTilesetFull_81: -1319971325
+      ForestTilesetFull_68: 724889604
+      ForestTilesetFull_96: 560362373
+      ForestTilesetFull_29: -1532053484
+      ForestTilesetFull_51: 1549202005
+      ForestTilesetFull_91: -2139239266
+      ForestTilesetFull_21: -1924855549
+      ForestTilesetFull_84: -70112576
+      ForestTilesetFull_54: 1841648932
+      ForestTilesetFull_83: 317124349
+      ForestTilesetFull_100: 995867551
+      ForestTilesetFull_45: -807590951
+      ForestTilesetFull_19: -148197885
+      ForestTilesetFull_57: 612651501
+      ForestTilesetFull_70: -1323936680
+      ForestTilesetFull_27: -1089611040
+      ForestTilesetFull_79: -998614576
+      ForestTilesetFull_92: -351131196
+      ForestTilesetFull_42: 348209026
+      ForestTilesetFull_44: -107445265
+      ForestTilesetFull_5: 530146199
+      ForestTilesetFull_33: 445101393
+      ForestTilesetFull_46: -1816440995
+      ForestTilesetFull_87: 309909700
+      ForestTilesetFull_15: -790765238
+      ForestTilesetFull_58: -508726268
+      ForestTilesetFull_12: -1432424231
+      ForestTilesetFull_37: -505757667
+      ForestTilesetFull_47: 1353728081
+      ForestTilesetFull_26: -414937600
+      ForestTilesetFull_50: -1023616489
+      ForestTilesetFull_67: -738492361
+      ForestTilesetFull_23: 117113709
+      ForestTilesetFull_75: -1252521754
+      ForestTilesetFull_4: 1584617336
+      ForestTilesetFull_71: 1781868847
+      ForestTilesetFull_7: -1564886444
+      ForestTilesetFull_85: -121575716
+      ForestTilesetFull_32: -602764505
+      ForestTilesetFull_8: 553282977
+      ForestTilesetFull_80: 2984932
+      ForestTilesetFull_82: -1073669705
+      ForestTilesetFull_94: -1544457148
+      ForestTilesetFull_73: -617385793
+      ForestTilesetFull_11: 2036662813
+      ForestTilesetFull_72: 94500319
+      ForestTilesetFull_28: -2080335376
+      ForestTilesetFull_60: -1641167892
+      ForestTilesetFull_56: -1372449247
+      ForestTilesetFull_31: -1344817588
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

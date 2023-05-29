@@ -14,13 +14,13 @@ namespace Core
 
         public void StopTime()
         {
-            Time.timeScale = 0;
             inputListener.Expose();
+            Time.timeScale = 0;
         }
         public void Continue()
         {
-            Time.timeScale = 1;
             inputListener.Bind();
+            Time.timeScale = 1;
         }
 
         public void RestartLevel()

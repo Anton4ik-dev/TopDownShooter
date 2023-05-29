@@ -1,0 +1,993 @@
+fileFormatVersion: 2
+guid: e2f3b2471c805da43af1aba2c6100c0b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 160
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26b4c54d43ad2e45ac4db5922582853
+      internalID: -291029121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 160
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3474f27326afdec4185a529bfd323c14
+      internalID: 993211167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 160
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716093d10ecf85d42aaca1a1b90d920e
+      internalID: 1046219282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 160
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3087b83d639fa644c87777487f793221
+      internalID: 2109795434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 160
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5959084fa09b7404cb73512ca3f1d6d3
+      internalID: 535165373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 160
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274b696e228041b4c9ed705039641f5c
+      internalID: 89828823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 160
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3adb5cd3c02ab7349967598269df4dc6
+      internalID: 520757704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 160
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ae5167b811f5f4fac518ec3e2635c0
+      internalID: 1029544384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 128
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6311b06695a9a71449707ef1f16c1197
+      internalID: 762647676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 130
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f31201ef24b6ec4b89f8a9c63a99483
+      internalID: -925445694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 131
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34a9d53065cd794d8c23b28c03e30f4
+      internalID: -1815323522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 130
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb7a93f61bd9b74a82acfa0693face1
+      internalID: 929183638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 128
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6eb9c4bcba052044bd5e2b4dfba2810
+      internalID: -1504839546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 130
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c452efa925ef6143a198a103fdb6737
+      internalID: 245454359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 131
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2152caef457b7144ea2e48e75070917e
+      internalID: 1111076973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 130
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408eb4ebffc701c4081eccab48f73aee
+      internalID: -2011159545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 96
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af47362192d8fbb49b3744a5ea96a304
+      internalID: 501446656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 96
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4c0bfc90751b34d944bb6c35564fdc
+      internalID: 1439153577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 96
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cca1138e9dfb9444a5ccbc54d107bd8
+      internalID: -569071866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 96
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75481c2d6fc43445999443a7d3dd262
+      internalID: -1525022715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 96
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7cd9f4102c6734ca2e91db671295ff
+      internalID: 2019013053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 96
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86cbb5572d032043ae50d1b37afaf50
+      internalID: 1450402453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 96
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c40c76e09f13d140b920ca9ba4db674
+      internalID: -1306772843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 64
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e47a4745c7ca624e85c04cfdf37a8b7
+      internalID: 1279102895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 64
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d59c4540f545334fa0b31ad0c290ff0
+      internalID: -1397815741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 64
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9993b872a2362354fb7ea02f04bacac2
+      internalID: -384742228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 64
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5874fc5d881fe344fab568a27418361d
+      internalID: -1034924779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3dba3ba21e87454aaec65909705e5a6
+      internalID: -1497149022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 64
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d3bc6bd33787247a7e5db00a56acd5
+      internalID: -140799692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4860255c8ce024f8ea9f88d3d85183
+      internalID: 80626116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 32
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57650d1531a49948bf65768bdbecc08
+      internalID: 1805298168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 32
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7340632d2efb5a640ac3a4c51de90380
+      internalID: -2044711328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 32
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c1d8a0f4f5be740b7cfb7b52f58d07
+      internalID: 579259007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 32
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c7fc2c9de490b45b0dc7f50526b48e
+      internalID: 238018567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043d05df518531940a3237dd0545904a
+      internalID: 1114063213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa44f42132b7e25499b71c18ecf6b73c
+      internalID: 936296267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79d6f9ebb53fd645b572ff3289fb4db
+      internalID: -780254940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e38b3fffbac0147bc9c82c61705672
+      internalID: -1036728230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leshy Leaf Sprite Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 0
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe79a4492fd3ed14a8249125f713448d
+      internalID: -1779185708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Leshy Leaf Sprite Sheet_9: -925445694
+      Leshy Leaf Sprite Sheet_20: 2019013053
+      Leshy Leaf Sprite Sheet_6: 520757704
+      Leshy Leaf Sprite Sheet_17: 1439153577
+      Leshy Leaf Sprite Sheet_7: 1029544384
+      Leshy Leaf Sprite Sheet_33: 238018567
+      Leshy Leaf Sprite Sheet_14: 1111076973
+      Leshy Leaf Sprite Sheet_13: 245454359
+      Leshy Leaf Sprite Sheet_8: 762647676
+      Leshy Leaf Sprite Sheet_5: 89828823
+      Leshy Leaf Sprite Sheet_24: -1397815741
+      Leshy Leaf Sprite Sheet_22: -1306772843
+      Leshy Leaf Sprite Sheet_30: 1805298168
+      Leshy Leaf Sprite Sheet_19: -1525022715
+      Leshy Leaf Sprite Sheet_23: 1279102895
+      Leshy Leaf Sprite Sheet_27: -1497149022
+      Leshy Leaf Sprite Sheet_34: 1114063213
+      Leshy Leaf Sprite Sheet_36: -780254940
+      Leshy Leaf Sprite Sheet_21: 1450402453
+      Leshy Leaf Sprite Sheet_28: -140799692
+      Leshy Leaf Sprite Sheet_38: -1779185708
+      Leshy Leaf Sprite Sheet_11: 929183638
+      Leshy Leaf Sprite Sheet_29: 80626116
+      Leshy Leaf Sprite Sheet_35: 936296267
+      Leshy Leaf Sprite Sheet_3: 2109795434
+      Leshy Leaf Sprite Sheet_18: -569071866
+      Leshy Leaf Sprite Sheet_2: 1046219282
+      Leshy Leaf Sprite Sheet_25: -384742228
+      Leshy Leaf Sprite Sheet_31: -2044711328
+      Leshy Leaf Sprite Sheet_10: -1815323522
+      Leshy Leaf Sprite Sheet_16: 501446656
+      Leshy Leaf Sprite Sheet_0: -291029121
+      Leshy Leaf Sprite Sheet_1: 993211167
+      Leshy Leaf Sprite Sheet_4: 535165373
+      Leshy Leaf Sprite Sheet_12: -1504839546
+      Leshy Leaf Sprite Sheet_32: 579259007
+      Leshy Leaf Sprite Sheet_15: -2011159545
+      Leshy Leaf Sprite Sheet_26: -1034924779
+      Leshy Leaf Sprite Sheet_37: -1036728230
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
