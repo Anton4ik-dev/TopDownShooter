@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2161753684182737575}
   - component: {fileID: 6867427981878152235}
   - component: {fileID: 5842533539462561192}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EnemyBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,3 +141,6 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
+  bulletLayer:
+    serializedVersion: 2
+    m_Bits: 128

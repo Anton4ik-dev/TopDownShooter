@@ -22,15 +22,19 @@ public class MeleeEnemy : MonoBehaviour, IEnemy
 
     void Start()
     {
-        _agent = GetComponent<NavMeshAgent>();
-        _agent.updateRotation = false;
-        _agent.updateUpAxis = false;
         _player = GameObject.FindGameObjectWithTag("Player").transform;
         _currentHp = hp;
         _rb = GetComponent<Rigidbody2D>();
         healthBar.maxValue = hp;
         healthBar.value = hp;
         playerLayerMask = (int)Mathf.Log(playerLayer.value, 2);
+    }
+
+    private void Awake()
+    {
+        _agent = GetComponent<NavMeshAgent>();
+        _agent.updateRotation = false;
+        _agent.updateUpAxis = false;
     }
 
     void Update()
@@ -51,7 +55,6 @@ public class MeleeEnemy : MonoBehaviour, IEnemy
         if (collision.gameObject.layer == playerLayerMask && !_isDeath)
         {
             collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
-            Debug.Log($"Enemy damage player on {damage}");
         }
     }
 

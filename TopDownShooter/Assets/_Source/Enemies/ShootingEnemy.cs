@@ -17,6 +17,7 @@ public class ShootingEnemy : MonoBehaviour, IEnemy
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private GameObject _shootPoint;
+    [SerializeField] private Rigidbody2D gun;
 
     private int playerLayerMask;
     private Transform _player;
@@ -28,15 +29,19 @@ public class ShootingEnemy : MonoBehaviour, IEnemy
 
     void Start()
     {
-        _agent = GetComponent<NavMeshAgent>();
-        _agent.updateRotation = false;
-        _agent.updateUpAxis = false;
         _player = GameObject.FindGameObjectWithTag("Player").transform;
         _currentHp = hp;
         _rb = GetComponent<Rigidbody2D>();
         healthBar.maxValue = hp;
         healthBar.value = hp;
         playerLayerMask = (int)Mathf.Log(playerLayer.value, 2);
+    }
+
+    private void Awake()
+    {
+        _agent = GetComponent<NavMeshAgent>();
+        _agent.updateRotation = false;
+        _agent.updateUpAxis = false;
     }
 
     void Update()
@@ -48,20 +53,24 @@ public class ShootingEnemy : MonoBehaviour, IEnemy
             float distanceToPlayer = Vector2.Distance(transform.position, _player.position);
             if (distanceToPlayer <= radiusOfVision && distanceToPlayer >= startShootingRadius)
             {
-                Rotate();
+                
                 _agent.SetDestination(_player.transform.position);
             }
             else if (distanceToPlayer <= startShootingRadius)
             {
-                Rotate();
                 _agent.ResetPath();
-                RaycastHit2D raycastHit = Physics2D.Raycast(_shootPoint.transform.position, _player.position, Mathf.Infinity);
-                if (raycastHit.transform?.gameObject.layer == playerLayerMask)
+                RaycastHit2D raycastHit2D = Physics2D.Raycast(_shootPoint.transform.position, _player.position - _shootPoint.transform.position, 100);
+
+                if (raycastHit2D.transform?.gameObject.layer == playerLayerMask)
                     if (!_onCooldown)
                         StartCoroutine(Attack());
+
+
             }
             if (_currentHp <= 0)
                 _isDeath = true;
+
+            Rotate();
         }
         else
             StartCoroutine(Death());
@@ -93,7 +102,7 @@ public class ShootingEnemy : MonoBehaviour, IEnemy
     {
         Vector2 aimDirection = (Vector2)_player.position - _rb.position;
         float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
-        _rb.rotation = aimAngle;
+        gun.rotation = aimAngle;
     }
 
     public IEnumerator Death()

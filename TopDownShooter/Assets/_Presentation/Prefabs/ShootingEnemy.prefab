@@ -391,7 +391,7 @@ GameObject:
   - component: {fileID: 701945906418912275}
   - component: {fileID: 4955949092308835545}
   m_Layer: 6
-  m_Name: Weopone
+  m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -404,13 +404,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5537026888291082649}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.005, y: 0.505, z: 0}
-  m_LocalScale: {x: 0.16415656, y: 0.38202927, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.030459426, y: 1.3218889, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6001616648679736689}
-  m_RootOrder: 1
+  m_Father: {fileID: 5894788871391619759}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4955949092308835545
 SpriteRenderer:
@@ -498,8 +498,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1862517005}
-  - {fileID: 701945906418912275}
-  - {fileID: 6946779809579452776}
+  - {fileID: 5894788871391619759}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -593,13 +592,14 @@ MonoBehaviour:
   damage: 1
   radiusOfVision: 8
   startShootingRadius: 5
-  cooldown: 3
+  cooldown: 2
   healthBar: {fileID: 1367389323}
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
   _bulletPrefab: {fileID: 1977618926553432391, guid: 473bab082fcb96a4fa39742e4798cb36, type: 3}
   _shootPoint: {fileID: 7207850177801833219}
+  gun: {fileID: 5575826004967093289}
 --- !u!195 &4136826505214451309
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -638,6 +638,61 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!1 &6370478748617195168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5894788871391619759}
+  - component: {fileID: 5575826004967093289}
+  m_Layer: 6
+  m_Name: Weopone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5894788871391619759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370478748617195168}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.16415656, y: 0.38202927, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 701945906418912275}
+  - {fileID: 6946779809579452776}
+  m_Father: {fileID: 6001616648679736689}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &5575826004967093289
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370478748617195168}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &7207850177801833219
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,11 +716,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7207850177801833219}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.002, y: 0.6949, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.012182608, y: 1.986, z: 0}
+  m_LocalScale: {x: 6.091746, y: 2.617601, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6001616648679736689}
-  m_RootOrder: 2
+  m_Father: {fileID: 5894788871391619759}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
