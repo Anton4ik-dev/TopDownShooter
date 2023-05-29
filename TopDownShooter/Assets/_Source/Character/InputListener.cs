@@ -34,7 +34,7 @@ namespace CharacterSystem
             _mainInput.Player.Move.canceled -= Move;
         }
 
-        private void Bind()
+        public void Bind()
         {
             _mainInput.Player.Enable();
 

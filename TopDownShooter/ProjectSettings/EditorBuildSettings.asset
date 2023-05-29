@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/_Presentation/Scenes/PlayerTestScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/_Presentation/Scenes/PrototipeLevel.unity
-    guid: 8e4d54a00fed9904b83c73130679fd16
+    path: Assets/_Presentation/Scenes/MainMenu.unity
+    guid: 0a6d08616f50c2b4b94e4834db43189f
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/CharacterTest.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
