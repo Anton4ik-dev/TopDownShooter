@@ -599,7 +599,7 @@ MonoBehaviour:
     m_Bits: 8
   _bulletPrefab: {fileID: 1977618926553432391, guid: 473bab082fcb96a4fa39742e4798cb36, type: 3}
   _shootPoint: {fileID: 7207850177801833219}
-  gun: {fileID: 5575826004967093289}
+  gun: {fileID: 5894788871391619759}
 --- !u!195 &4136826505214451309
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -647,7 +647,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5894788871391619759}
-  - component: {fileID: 5575826004967093289}
   m_Layer: 6
   m_Name: Weopone
   m_TagString: Untagged
@@ -672,27 +671,6 @@ Transform:
   m_Father: {fileID: 6001616648679736689}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &5575826004967093289
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6370478748617195168}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &7207850177801833219
 GameObject:
   m_ObjectHideFlags: 0

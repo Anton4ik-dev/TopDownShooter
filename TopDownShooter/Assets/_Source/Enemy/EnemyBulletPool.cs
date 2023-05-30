@@ -52,6 +52,7 @@ namespace EnemySystem
                     _pool[i].transform.rotation = _container.rotation;
                     _pool[i].SetDamage(damage);
                     _pool[i].gameObject.SetActive(true);
+                    _pool[i].gameObject.transform.parent = _container.parent.parent;
                     return true;
                 }
             }

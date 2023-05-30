@@ -21,7 +21,7 @@ namespace EnemySystem
         [SerializeField] private LayerMask playerLayer;
         [SerializeField] private GameObject _bulletPrefab;
         [SerializeField] private GameObject _shootPoint;
-        [SerializeField] private Rigidbody2D gun;
+        [SerializeField] private Transform gun;
 
         private int playerLayerMask;
         private Rigidbody2D _rb;
@@ -60,11 +60,12 @@ namespace EnemySystem
                 float distanceToPlayer = Vector2.Distance(transform.position, _player.position);
                 if (distanceToPlayer <= radiusOfVision && distanceToPlayer >= startShootingRadius)
                 {
-
+                    Rotate();
                     _agent.SetDestination(_player.transform.position);
                 }
                 else if (distanceToPlayer <= startShootingRadius)
                 {
+                    Rotate();
                     _agent.ResetPath();
                     RaycastHit2D raycastHit2D = Physics2D.Raycast(_shootPoint.transform.position, _player.position - _shootPoint.transform.position, 100);
 
@@ -77,7 +78,7 @@ namespace EnemySystem
                 if (_currentHp <= 0)
                     _isDeath = true;
 
-                Rotate();
+                
             }
             else
                 StartCoroutine(Death());
@@ -101,7 +102,7 @@ namespace EnemySystem
         {
             Vector2 aimDirection = (Vector2)_player.position - _rb.position;
             float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
-            gun.rotation = aimAngle;
+            gun.rotation = Quaternion.AngleAxis(aimAngle, new Vector3(0, 0, 1));
         }
 
         public IEnumerator Death()
