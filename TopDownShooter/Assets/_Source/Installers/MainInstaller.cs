@@ -8,6 +8,7 @@ public class MainInstaller : MonoInstaller
 {
     [SerializeField] private BulletPoolSO _bulletPoolSO;
     [SerializeField] private Transform _bulletContainer;
+    [SerializeField] private GameObject _player;
 
     [SerializeField] private CharacterDataSO _characterDataSO;
     [SerializeField] private Camera _mainCamera;
@@ -19,6 +20,8 @@ public class MainInstaller : MonoInstaller
         Container.Bind<BulletPool>().AsSingle().NonLazy();
         Container.Bind<BulletPoolSO>().FromInstance(_bulletPoolSO).AsSingle();
         Container.Bind<Transform>().FromInstance(_bulletContainer).AsSingle();
+
+        Container.Bind<GameObject>().FromInstance(_player).AsSingle();
 
         Container.Bind<CharacterActions>().AsSingle().NonLazy();
         Container.Bind<CharacterDataSO>().FromInstance(_characterDataSO).AsSingle();
