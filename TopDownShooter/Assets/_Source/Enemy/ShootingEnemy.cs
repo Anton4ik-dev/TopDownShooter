@@ -8,6 +8,8 @@ namespace EnemySystem
 {
     public class ShootingEnemy : MonoBehaviour, IEnemy
     {
+        private const int BULLET_AMOUNT = 15;
+
         [SerializeField] private float speed;
         [SerializeField] private int hp;
         [SerializeField] private int damage;
@@ -22,21 +24,24 @@ namespace EnemySystem
         [SerializeField] private Rigidbody2D gun;
 
         private int playerLayerMask;
-        private Transform _player;
         private Rigidbody2D _rb;
         private bool _isDeath;
         private int _currentHp;
         private NavMeshAgent _agent;
         private bool _onCooldown;
+        private EnemyBulletPool _bulletPool;
+
+        [Inject]
+        private Transform _player;
 
         void Start()
         {
-            //_player = GameObject.FindGameObjectWithTag("Character").transform;
             _currentHp = hp;
             _rb = GetComponent<Rigidbody2D>();
             healthBar.maxValue = hp;
             healthBar.value = hp;
             playerLayerMask = (int)Mathf.Log(playerLayer.value, 2);
+            _bulletPool = new EnemyBulletPool(BULLET_AMOUNT,_bulletPrefab, _shootPoint.transform);
         }
 
         private void Awake()
@@ -80,7 +85,7 @@ namespace EnemySystem
 
         private IEnumerator Attack()
         {
-            Instantiate(_bulletPrefab, _shootPoint.transform.position, _shootPoint.transform.rotation).GetComponent<EnemyBullet>().SetDamage(damage);
+            _bulletPool.GetFreeElement(damage);
             _onCooldown = true;
             yield return new WaitForSeconds(cooldown);
             _onCooldown = false;

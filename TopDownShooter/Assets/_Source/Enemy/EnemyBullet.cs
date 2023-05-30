@@ -1,6 +1,7 @@
 using CharacterSystem;
 using System.Collections;
 using UnityEngine;
+using Zenject;
 
 namespace EnemySystem
 {
@@ -18,10 +19,18 @@ namespace EnemySystem
 
         private void Awake()
         {
-            rb.AddForce(transform.up * fireForce, ForceMode2D.Impulse);
             _enemyLayerMask = (int)Mathf.Log(playerLayer.value, 2);
             _bulletLayerMask = (int)Mathf.Log(bulletLayer.value, 2);
+        }
+
+        private void OnEnable()
+        {
             StartCoroutine(LifeTime());
+        }
+
+        private void Update()
+        {
+            rb.velocity = transform.up * fireForce;
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
@@ -30,7 +39,7 @@ namespace EnemySystem
                 collision.GetComponent<CharacterView>().Health -= _damage;
 
             if (collision.gameObject.layer != _bulletLayerMask)
-                Destroy(gameObject);
+                gameObject.SetActive(false);
         }
 
         public void SetDamage(int damage) => _damage = damage;

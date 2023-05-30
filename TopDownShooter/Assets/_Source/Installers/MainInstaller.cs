@@ -1,5 +1,6 @@
 using CharacterSystem;
 using ScriptableObjects;
+using EnemySystem;
 using Services;
 using UnityEngine;
 using Zenject;
@@ -9,6 +10,9 @@ public class MainInstaller : MonoInstaller
     [SerializeField] private BulletPoolSO _bulletPoolSO;
     [SerializeField] private Transform _bulletContainer;
     [SerializeField] private GameObject _player;
+
+    [SerializeField] private GameObject _meleeEnemy;
+    [SerializeField] private GameObject _shootingEnemy;
 
     [SerializeField] private CharacterDataSO _characterDataSO;
     [SerializeField] private Camera _mainCamera;
@@ -33,5 +37,7 @@ public class MainInstaller : MonoInstaller
         Container.Bind<LayerService>().AsSingle().NonLazy();
 
         Container.BindFactory<Bullet, Bullet.Factory>().FromComponentInNewPrefab(_bulletPoolSO.Bullet);
+        Container.BindFactory<MeleeEnemy, EnemySpawner.MeleeEnemyFactory>().FromComponentInNewPrefab(_meleeEnemy);
+        Container.BindFactory<ShootingEnemy, EnemySpawner.ShootingEnemyFactory>().FromComponentInNewPrefab(_shootingEnemy);
     }
 }

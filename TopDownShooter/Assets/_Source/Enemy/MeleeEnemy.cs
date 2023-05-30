@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
+using Zenject;
 
 namespace EnemySystem
 {
@@ -17,15 +18,16 @@ namespace EnemySystem
         [SerializeField] private LayerMask playerLayer;
 
         private int playerLayerMask;
-        private Transform _player;
         private Rigidbody2D _rb;
         private bool _isDeath;
         private int _currentHp;
         private NavMeshAgent _agent;
 
+        [Inject]
+        private Transform _player;
+
         void Start()
         {
-            _player = GameObject.FindGameObjectWithTag("Player").transform;
             _currentHp = hp;
             _rb = GetComponent<Rigidbody2D>();
             healthBar.maxValue = hp;
@@ -82,5 +84,8 @@ namespace EnemySystem
             yield return new WaitForSeconds(3f);
             gameObject.SetActive(false);
         }
+
+        [Inject]
+        public void Construct(GameObject player) => _player = player.transform;
     }
 }
