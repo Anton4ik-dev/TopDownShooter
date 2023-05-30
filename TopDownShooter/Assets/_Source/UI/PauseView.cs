@@ -25,7 +25,7 @@ namespace UI
         {
             gameObject.SetActive(false);
 
-            restartButton.onClick.AddListener(game.GoToNextLevel);
+            restartButton.onClick.AddListener(game.RestartLevel);
             pauseButton.onClick.AddListener(Pause);
             continueButton.onClick.AddListener(UnPause);
             mainMenuButton.onClick.AddListener(game.GoToMainMenu);

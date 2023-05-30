@@ -1,3 +1,4 @@
+using EnemySystem;
 using Services;
 using System.Collections;
 using UnityEngine;
@@ -48,7 +49,11 @@ namespace CharacterSystem
         {
             if (collision.gameObject.layer == gameObject.layer || _layerService.CheckLayersEquality(collision.gameObject.layer, _characterLayer))
                 return;
-
+            else if(_layerService.CheckLayersEquality(collision.gameObject.layer, _enemyLayer))
+            {
+                if (collision.gameObject.TryGetComponent(out IEnemy enemy))
+                    enemy.GetDamage(_damage);
+            }
             gameObject.SetActive(false);
         }
 

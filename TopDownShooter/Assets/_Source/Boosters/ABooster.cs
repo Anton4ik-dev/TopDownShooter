@@ -10,11 +10,13 @@ namespace Boosters
     {
         [SerializeField] protected int _scale;
         [SerializeField] private float _boostTime;
+        [SerializeField] private bool _isToRefresh;
         [SerializeField] private SpriteRenderer _sprite;
         [SerializeField] private Collider2D _collider2D;
         [SerializeField] private LayerMask _characterLayer;
 
         private LayerService _layerService;
+        private const float REFRESH_TIME = 10;
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
@@ -26,6 +28,8 @@ namespace Boosters
                     StartCoroutine(BoostTimer(characterView));
                     _sprite.enabled = false;
                     _collider2D.enabled = false;
+                    if (_isToRefresh)
+                        StartCoroutine(Refresher());
                 }
             }
         }
@@ -40,6 +44,13 @@ namespace Boosters
         {
             yield return new WaitForSeconds(_boostTime);
             RemoveBoost(characterView);
+        }
+
+        private IEnumerator Refresher()
+        {
+            yield return new WaitForSeconds(REFRESH_TIME);
+            _sprite.enabled = true;
+            _collider2D.enabled = true;
         }
 
         protected abstract void AddBoost(CharacterView characterView);

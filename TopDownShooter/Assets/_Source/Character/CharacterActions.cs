@@ -86,6 +86,7 @@ namespace CharacterSystem
             Vector2 aimDirection = mousePosition - _rb.position;
             float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
             _rb.rotation = aimAngle;
+            _mainCamera.transform.position = new Vector3(_rb.transform.position.x, _rb.transform.position.y, _mainCamera.transform.position.z);
         }
 
         public IEnumerator ShootDelay()

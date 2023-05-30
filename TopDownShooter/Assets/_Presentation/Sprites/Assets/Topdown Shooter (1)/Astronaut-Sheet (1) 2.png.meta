@@ -841,7 +841,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Astronaut-Sheet (1) 2_10: -6709974
+      Astronaut-Sheet (1) 2_27: -1582332776
       Astronaut-Sheet (1) 2_21: -1878395391
       Astronaut-Sheet (1) 2_17: 1924692019
       Astronaut-Sheet (1) 2_13: -934480586
@@ -850,7 +850,7 @@ TextureImporter:
       Astronaut-Sheet (1) 2_28: 222783762
       Astronaut-Sheet (1) 2_5: -1949775001
       Astronaut-Sheet (1) 2_18: 630898690
-      Astronaut-Sheet (1) 2_27: -1582332776
+      Astronaut-Sheet (1) 2_1: -1876919473
       Astronaut-Sheet (1) 2_32: 90256000
       Astronaut-Sheet (1) 2_15: -35692305
       Astronaut-Sheet (1) 2_19: -1117398277
@@ -874,7 +874,7 @@ TextureImporter:
       Astronaut-Sheet (1) 2_20: 1037750457
       Astronaut-Sheet (1) 2_31: -1261326075
       Astronaut-Sheet (1) 2_24: 1787796873
-      Astronaut-Sheet (1) 2_1: -1876919473
+      Astronaut-Sheet (1) 2_10: -6709974
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

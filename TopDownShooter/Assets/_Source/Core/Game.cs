@@ -6,42 +6,45 @@ namespace Core
 {
     public class Game : MonoBehaviour
     {
-        [SerializeField] private int mainMenuId;
-        [SerializeField] private int thisLevelId;
-        [SerializeField] private int nextLevelId;
-
-        [SerializeField] private InputListener inputListener;
+        [SerializeField] private int _mainMenuId;
+        [SerializeField] private int _thisLevelId;
+        [SerializeField] private int _minLevelId;
+        [SerializeField] private int _maxLevelId;
+        [SerializeField] private InputListener _inputListener;
 
         public void StopTime()
         {
-            inputListener.Expose();
+            _inputListener.Expose();
             Time.timeScale = 0;
         }
         public void Continue()
         {
-            inputListener.Bind();
+            _inputListener.Bind();
             Time.timeScale = 1;
         }
 
         public void RestartLevel()
         {
             Continue();
-            inputListener.Expose();
-            SceneManager.LoadScene(thisLevelId);
+            _inputListener.Expose();
+            SceneManager.LoadScene(_thisLevelId);
         }
 
         public void GoToNextLevel()
         {
             Continue();
-            inputListener.Expose();
+            _inputListener.Expose();
+            int nextLevelId = Random.Range(_minLevelId, _maxLevelId);
+            while(nextLevelId == _thisLevelId)
+                nextLevelId = Random.Range(_minLevelId, _maxLevelId);
             SceneManager.LoadScene(nextLevelId);
         }
 
         public void GoToMainMenu()
         {
             Continue();
-            inputListener.Expose();
-            SceneManager.LoadScene(mainMenuId);
+            _inputListener.Expose();
+            SceneManager.LoadScene(_mainMenuId);
         }
     }
 }
