@@ -5,6 +5,17 @@ public class EnemySound : MonoBehaviour
     [SerializeField] private AudioSource idleSound;
     [SerializeField] private AudioSource deathSound;
 
+    private void Update()
+    {
+        if (Time.timeScale == 0)
+        {
+            StopIdleSound();
+            StopDeathSound();
+        }
+        else
+            PlayIdleSound(true);
+    }
+
     public void PlayIdleSound(bool loop)
     {
         idleSound.loop = loop;
@@ -13,7 +24,6 @@ public class EnemySound : MonoBehaviour
 
     public void PlayDeathSound(bool loop)
     {
-        Debug.Log("Death");
         deathSound.loop = loop;
         deathSound.Play();
     }

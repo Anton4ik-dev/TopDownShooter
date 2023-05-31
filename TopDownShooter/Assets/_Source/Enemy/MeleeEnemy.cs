@@ -17,6 +17,7 @@ namespace EnemySystem
         [SerializeField] private Slider healthBar;
         [SerializeField] private LayerMask playerLayer;
         [SerializeField] private EnemySound enemySound;
+        [SerializeField] private GameObject sleepIcon;
 
         private int playerLayerMask;
         private Rigidbody2D _rb;
@@ -86,7 +87,8 @@ namespace EnemySystem
 
         public IEnumerator Death()
         {
-            GetComponent<SpriteRenderer>().color = Color.red;
+            GetComponent<SpriteRenderer>().color = Color.gray;
+            sleepIcon.SetActive(true);
             enemySound.StopIdleSound();
             enemySound.PlayDeathSound(false);
             yield return new WaitForSeconds(3f);

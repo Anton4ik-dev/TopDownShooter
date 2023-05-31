@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5040628149837098802}
   - component: {fileID: 8290046357819724942}
   - component: {fileID: 8591743330198652800}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MaxHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
