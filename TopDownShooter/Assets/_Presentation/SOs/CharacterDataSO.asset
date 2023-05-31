@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shootDelay: 0.25
   _maxHealth: 100
-  _damage: 10
-  _moveSpeed: 5
+  _damage: 25
+  _moveSpeed: 1

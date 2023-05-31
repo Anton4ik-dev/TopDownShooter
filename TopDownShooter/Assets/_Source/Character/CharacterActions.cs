@@ -1,5 +1,6 @@
 using ScriptableObjects;
 using System.Collections;
+using UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,6 +17,7 @@ namespace CharacterSystem
         private int _health;
         private int _damage;
         private float _moveSpeed;
+        private LoseView _loseView;
 
         public int MaxHealth
         {
@@ -36,6 +38,7 @@ namespace CharacterSystem
                 {
                     _characterAnimator.SetDead();
                     _health = 0;
+                    _loseView.DrawLosePanel();
                 }
                 else if (_health > _maxHealth)
                     _health = _maxHealth;
@@ -60,7 +63,12 @@ namespace CharacterSystem
             }
         }
 
-        public CharacterActions(Rigidbody2D rb, Camera mainCamera, CharacterAnimator characterAnimator, BulletPool bulletPool, CharacterDataSO characterDataSO)
+        public CharacterActions(Rigidbody2D rb,
+            Camera mainCamera, 
+            CharacterAnimator characterAnimator,
+            BulletPool bulletPool, 
+            CharacterDataSO characterDataSO,
+            LoseView loseView)
         {
             _rb = rb;
             _mainCamera = mainCamera;
@@ -71,6 +79,7 @@ namespace CharacterSystem
             _health = characterDataSO.MaxHealth;
             _damage = characterDataSO.Damage;
             _moveSpeed = characterDataSO.MoveSpeed;
+            _loseView = loseView;
         }
 
         public void Move(float moveX, float moveY)

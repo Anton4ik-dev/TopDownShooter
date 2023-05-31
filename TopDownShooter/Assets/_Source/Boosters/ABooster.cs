@@ -15,8 +15,10 @@ namespace Boosters
         [SerializeField] private Collider2D _collider2D;
         [SerializeField] private LayerMask _characterLayer;
 
-        private LayerService _layerService;
         private const float REFRESH_TIME = 10;
+
+        [Inject]
+        private LayerService _layerService;
 
         private void OnTriggerEnter2D(Collider2D collision)
         {

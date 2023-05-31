@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
   m_Color: {r: 0, g: 0.7624128, b: 1, a: 1}
   m_FlipX: 0
@@ -147,7 +147,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scale: 15
-  _boostTime: 20
+  _boostTime: 10
+  _isToRefresh: 0
   _sprite: {fileID: 5016626855346807366}
   _collider2D: {fileID: 7855806639491085451}
   _characterLayer:

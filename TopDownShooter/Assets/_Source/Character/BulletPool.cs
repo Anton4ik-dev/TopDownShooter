@@ -44,6 +44,9 @@ namespace CharacterSystem
             Bullet createdObject = _bulletFactory.Create();
             createdObject.gameObject.SetActive(isActiveByDefault);
             createdObject.transform.parent = _container;
+            createdObject.transform.position = _container.position;
+            createdObject.transform.rotation = _container.rotation;
+            createdObject.Damage = damage;
             _pool.Add(createdObject);
             return createdObject;
         }
