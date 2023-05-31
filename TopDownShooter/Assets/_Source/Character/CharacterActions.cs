@@ -3,6 +3,7 @@ using System.Collections;
 using UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 namespace CharacterSystem
 {
@@ -13,11 +14,13 @@ namespace CharacterSystem
         private CharacterAnimator _characterAnimator;
         private BulletPool _pool;
         private float _shootDelay;
+        private float _reloadTime;
         private int _maxHealth;
         private int _health;
         private int _damage;
         private float _moveSpeed;
         private LoseView _loseView;
+        private Slider _ammo;
 
         public int MaxHealth
         {
@@ -63,23 +66,27 @@ namespace CharacterSystem
             }
         }
 
+        public Slider Ammo { get => _ammo; private set { } }
+
         public CharacterActions(Rigidbody2D rb,
             Camera mainCamera, 
             CharacterAnimator characterAnimator,
             BulletPool bulletPool, 
             CharacterDataSO characterDataSO,
-            LoseView loseView)
+            LoseView loseView, Slider ammo)
         {
             _rb = rb;
             _mainCamera = mainCamera;
             _characterAnimator = characterAnimator;
             _pool = bulletPool;
             _shootDelay = characterDataSO.ShootDelay;
+            _reloadTime = characterDataSO.ReloadTime;
             _maxHealth = characterDataSO.MaxHealth;
             _health = characterDataSO.MaxHealth;
             _damage = characterDataSO.Damage;
             _moveSpeed = characterDataSO.MoveSpeed;
             _loseView = loseView;
+            _ammo = ammo;
         }
 
         public void Move(float moveX, float moveY)
@@ -102,9 +109,22 @@ namespace CharacterSystem
         {
             while(true)
             {
-                _pool.GetFreeElement(_damage);
-                ShootAnimate(true);
+                if(_ammo.value != _ammo.minValue)
+                {
+                    _pool.GetFreeElement(_damage);
+                    _ammo.value--;
+                    ShootAnimate(true);
+                }
                 yield return new WaitForSeconds(_shootDelay);
+            }
+        }
+
+        public IEnumerator Reload()
+        {
+            while(_ammo.value != _ammo.maxValue)
+            {
+                _ammo.value++;
+                yield return new WaitForSeconds(_reloadTime);
             }
         }
 

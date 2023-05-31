@@ -7,6 +7,7 @@ using Zenject;
 using Boosters;
 using System.Collections.Generic;
 using UI;
+using UnityEngine.UI;
 
 public class MainInstaller : MonoInstaller
 {
@@ -22,6 +23,7 @@ public class MainInstaller : MonoInstaller
     [SerializeField] private Camera _mainCamera;
     [SerializeField] private Rigidbody2D _characterRb;
     [SerializeField] private Animator _characterAnimator;
+    [SerializeField] private Slider _ammo;
 
     [SerializeField] private BoostersSpawnerSO _boostersSpawnerSO;
     [SerializeField] private List<Transform> _boostersSpawnPoints;
@@ -41,6 +43,7 @@ public class MainInstaller : MonoInstaller
         Container.Bind<CharacterAnimator>().AsSingle().NonLazy();
         Container.Bind<Animator>().FromInstance(_characterAnimator).AsSingle();
         Container.Bind<LoseView>().FromInstance(_loseView).AsSingle();
+        Container.Bind<Slider>().FromInstance(_ammo).AsSingle();
 
         Container.Bind<LayerService>().AsSingle().NonLazy();
 

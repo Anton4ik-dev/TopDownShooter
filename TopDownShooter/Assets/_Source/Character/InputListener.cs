@@ -8,7 +8,7 @@ namespace CharacterSystem
     {
         private CharacterActions _characterActions;
         private MainInput _mainInput;
-        private Coroutine _activeCoroutine;
+        private Coroutine _shootCoroutine;
 
         private void Update()
         {
@@ -47,12 +47,14 @@ namespace CharacterSystem
 
         private void StartShoot(InputAction.CallbackContext context)
         {
-            _activeCoroutine = StartCoroutine(_characterActions.ShootDelay());
+            if (_characterActions.Ammo.value == _characterActions.Ammo.maxValue)
+                _shootCoroutine = StartCoroutine(_characterActions.ShootDelay());
         }
 
         private void StopShoot(InputAction.CallbackContext context)
         {
-            StopCoroutine(_activeCoroutine);
+            StopCoroutine(_shootCoroutine);
+            StartCoroutine(_characterActions.Reload());
             _characterActions.ShootAnimate(false);
         }
 
