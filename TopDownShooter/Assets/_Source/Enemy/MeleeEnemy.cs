@@ -16,6 +16,7 @@ namespace EnemySystem
         [Space]
         [SerializeField] private Slider healthBar;
         [SerializeField] private LayerMask playerLayer;
+        [SerializeField] private EnemySound enemySound;
 
         private int playerLayerMask;
         private Rigidbody2D _rb;
@@ -40,6 +41,7 @@ namespace EnemySystem
             _agent = GetComponent<NavMeshAgent>();
             _agent.updateRotation = false;
             _agent.updateUpAxis = false;
+            enemySound.PlayIdleSound(true);
         }
 
         void Update()
@@ -50,9 +52,7 @@ namespace EnemySystem
                 Move();
                 if (_currentHp <= 0)
                     _isDeath = true;
-            }
-            else
-                StartCoroutine(Death());
+            }   
         }
 
         private void OnCollisionEnter2D(Collision2D collision)
@@ -76,11 +76,19 @@ namespace EnemySystem
         {
             _currentHp -= damage;
             healthBar.value = _currentHp;
+            if (_currentHp <= 0)
+            {
+                _isDeath = true;
+                StartCoroutine(Death());
+            }
+                
         }
 
         public IEnumerator Death()
         {
             GetComponent<SpriteRenderer>().color = Color.red;
+            enemySound.StopIdleSound();
+            enemySound.PlayDeathSound(false);
             yield return new WaitForSeconds(3f);
             gameObject.SetActive(false);
         }

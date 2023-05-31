@@ -22,6 +22,7 @@ namespace EnemySystem
         [SerializeField] private GameObject _bulletPrefab;
         [SerializeField] private GameObject _shootPoint;
         [SerializeField] private Transform gun;
+        [SerializeField] private EnemySound enemySound;
 
         private int playerLayerMask;
         private Rigidbody2D _rb;
@@ -49,6 +50,7 @@ namespace EnemySystem
             _agent = GetComponent<NavMeshAgent>();
             _agent.updateRotation = false;
             _agent.updateUpAxis = false;
+            enemySound.PlayIdleSound(true);
         }
 
         void Update()
@@ -72,16 +74,8 @@ namespace EnemySystem
                     if (raycastHit2D.transform?.gameObject.layer == playerLayerMask)
                         if (!_onCooldown)
                             StartCoroutine(Attack());
-
-
                 }
-                if (_currentHp <= 0)
-                    _isDeath = true;
-
-                
             }
-            else
-                StartCoroutine(Death());
         }
 
         private IEnumerator Attack()
@@ -96,6 +90,11 @@ namespace EnemySystem
         {
             _currentHp -= damage;
             healthBar.value = _currentHp;
+            if (_currentHp <= 0)
+            {
+                _isDeath = true;
+                StartCoroutine(Death());
+            }
         }
 
         public void Rotate()
@@ -108,6 +107,8 @@ namespace EnemySystem
         public IEnumerator Death()
         {
             GetComponent<SpriteRenderer>().color = Color.red;
+            enemySound.StopIdleSound();
+            enemySound.PlayDeathSound(false);
             yield return new WaitForSeconds(3f);
             gameObject.SetActive(false);
         }

@@ -7,15 +7,18 @@ namespace EnemySystem
     public class EnemySpawner : MonoBehaviour
     {
         [SerializeField] private List<Transform> spawnPoints;
-        [SerializeField] private int amountOfMeleeEnemy;
-        [SerializeField] private int amountOfShootingEnemy;
+        [SerializeField] private int MaxAmountOfMeleeEnemy;
+        [SerializeField] private int MinAmountOfMeleeEnemy;
+        [SerializeField] private int MaxAmountOfShootingEnemy;
+        [SerializeField] private int MinAmountOfShootingEnemy;
 
         private MeleeEnemyFactory _meleeEnemyFactory;
         private ShootingEnemyFactory _shootingEnemyFactory;
 
         void Start()
         {
-            for (int i = 0; i < amountOfMeleeEnemy; i++)
+            int amountOfEnemies = Random.Range(MinAmountOfMeleeEnemy, MaxAmountOfMeleeEnemy + 1);
+            for (int i = 0; i < amountOfEnemies; i++)
             {
                 int rnd = Random.Range(0, spawnPoints.Count);
                 MeleeEnemy meleeEnemy = _meleeEnemyFactory.Create();
@@ -23,8 +26,8 @@ namespace EnemySystem
                 meleeEnemy.gameObject.transform.parent = spawnPoints[rnd];
             }
 
-
-            for (int i = 0; i < amountOfShootingEnemy; i++)
+            amountOfEnemies = Random.Range(MinAmountOfShootingEnemy, MaxAmountOfShootingEnemy + 1);
+            for (int i = 0; i < amountOfEnemies; i++)
             {
                 int rnd = Random.Range(0, spawnPoints.Count);
                 ShootingEnemy shootingEnemy = _shootingEnemyFactory.Create();
