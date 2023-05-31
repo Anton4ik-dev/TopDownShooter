@@ -15,6 +15,7 @@ public class MainInstaller : MonoInstaller
     [SerializeField] private Transform _bulletContainer;
     [SerializeField] private GameObject _player;
     [SerializeField] private LoseView _loseView;
+    [SerializeField] private WinView _winView;
 
     [SerializeField] private GameObject _meleeEnemy;
     [SerializeField] private GameObject _shootingEnemy;
@@ -43,7 +44,11 @@ public class MainInstaller : MonoInstaller
         Container.Bind<CharacterAnimator>().AsSingle().NonLazy();
         Container.Bind<Animator>().FromInstance(_characterAnimator).AsSingle();
         Container.Bind<LoseView>().FromInstance(_loseView).AsSingle();
+<<<<<<< Updated upstream
         Container.Bind<Slider>().FromInstance(_ammo).AsSingle();
+=======
+        Container.Bind<WinView>().FromInstance(_winView).AsSingle();
+>>>>>>> Stashed changes
 
         Container.Bind<LayerService>().AsSingle().NonLazy();
 
