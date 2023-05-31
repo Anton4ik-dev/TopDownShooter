@@ -44,11 +44,8 @@ public class MainInstaller : MonoInstaller
         Container.Bind<CharacterAnimator>().AsSingle().NonLazy();
         Container.Bind<Animator>().FromInstance(_characterAnimator).AsSingle();
         Container.Bind<LoseView>().FromInstance(_loseView).AsSingle();
-<<<<<<< Updated upstream
         Container.Bind<Slider>().FromInstance(_ammo).AsSingle();
-=======
         Container.Bind<WinView>().FromInstance(_winView).AsSingle();
->>>>>>> Stashed changes
 
         Container.Bind<LayerService>().AsSingle().NonLazy();
 
