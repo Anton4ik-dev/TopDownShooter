@@ -760,7 +760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  hp: 200
+  hp: 75
   damage: 30
   radiusOfVision: 6
   attackCooldown: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CharacterDataSO
   m_EditorClassIdentifier: 
   _shootDelay: 0.25
-  _reloadTime: 2
+  _reloadTime: 1
   _maxHealth: 100
   _damage: 25
   _moveSpeed: 5

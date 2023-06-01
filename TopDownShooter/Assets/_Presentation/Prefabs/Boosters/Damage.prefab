@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3272911393330254694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.70832, y: 0.70832, z: 0.70832}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -147,8 +147,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scale: 15
-  _boostTime: 10
+  _boostTime: 100
   _isToRefresh: 0
+  _clueIfNeed: {fileID: 0}
   _sprite: {fileID: 5016626855346807366}
   _collider2D: {fileID: 7855806639491085451}
   _characterLayer:

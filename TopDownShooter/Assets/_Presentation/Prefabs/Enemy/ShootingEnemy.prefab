@@ -985,9 +985,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.8
-  hp: 75
+  hp: 30
   damage: 25
-  radiusOfVision: 8
+  radiusOfVision: 9
   startShootingRadius: 5
   cooldown: 2
   healthBar: {fileID: 1367389323}
