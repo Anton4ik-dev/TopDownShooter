@@ -8,7 +8,6 @@ namespace CharacterSystem
     {
         private CharacterActions _characterActions;
         private MainInput _mainInput;
-        private Coroutine _shootCoroutine;
 
         private void Update()
         {
@@ -28,7 +27,6 @@ namespace CharacterSystem
             _mainInput.Player.Disable();
 
             _mainInput.Player.Shoot.performed -= StartShoot;
-            _mainInput.Player.Shoot.canceled -= StopShoot;
 
             _mainInput.Player.Move.performed -= Move;
             _mainInput.Player.Move.canceled -= Move;
@@ -39,7 +37,6 @@ namespace CharacterSystem
             _mainInput.Player.Enable();
 
             _mainInput.Player.Shoot.performed += StartShoot;
-            _mainInput.Player.Shoot.canceled += StopShoot;
 
             _mainInput.Player.Move.performed += Move;
             _mainInput.Player.Move.canceled += Move;
@@ -47,15 +44,11 @@ namespace CharacterSystem
 
         private void StartShoot(InputAction.CallbackContext context)
         {
-            if (_characterActions.Ammo.value == _characterActions.Ammo.maxValue)
-                _shootCoroutine = StartCoroutine(_characterActions.ShootDelay());
-        }
-
-        private void StopShoot(InputAction.CallbackContext context)
-        {
-            StopCoroutine(_shootCoroutine);
-            StartCoroutine(_characterActions.Reload());
-            _characterActions.ShootAnimate(false);
+            if(_characterActions.Ammo.value == _characterActions.Ammo.maxValue)
+            {
+                _characterActions.Shoot();
+                StartCoroutine(_characterActions.Reload());
+            }
         }
 
         private void Move(InputAction.CallbackContext context)

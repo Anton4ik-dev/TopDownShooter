@@ -8,9 +8,10 @@ namespace Boosters
 {
     public abstract class ABooster : MonoBehaviour
     {
-        [SerializeField] protected int _scale;
+        [SerializeField] protected float _scale;
         [SerializeField] private float _boostTime;
         [SerializeField] private bool _isToRefresh;
+        [SerializeField] private GameObject _clueIfNeed;
         [SerializeField] private SpriteRenderer _sprite;
         [SerializeField] private Collider2D _collider2D;
         [SerializeField] private LayerMask _characterLayer;
@@ -50,7 +51,9 @@ namespace Boosters
 
         private IEnumerator Refresher()
         {
+            _clueIfNeed.SetActive(false);
             yield return new WaitForSeconds(REFRESH_TIME);
+            _clueIfNeed.SetActive(true);
             _sprite.enabled = true;
             _collider2D.enabled = true;
         }

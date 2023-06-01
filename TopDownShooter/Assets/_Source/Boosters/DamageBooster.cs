@@ -6,13 +6,12 @@ namespace Boosters
     {
         protected override void AddBoost(CharacterView characterView)
         {
-            characterView.Damage += _scale;
+            characterView.Damage += (int)_scale;
         }
 
         protected override void RemoveBoost(CharacterView characterView)
         {
-            characterView.Damage -= _scale;
-            gameObject.SetActive(false);
+            characterView.Damage -= (int)_scale;
         }
     }
 }

@@ -6,7 +6,6 @@ namespace CharacterSystem
     {
         private readonly int _speedHash = Animator.StringToHash("Speed");
         private readonly int _shootHash = Animator.StringToHash("IsShooting");
-        private readonly int _deadHash = Animator.StringToHash("IsDead");
 
         private readonly Animator _characterAnimator;
 
@@ -20,14 +19,9 @@ namespace CharacterSystem
             _characterAnimator.SetFloat(_speedHash, x);
         }
 
-        public void SetShoot(bool isShooting)
+        public void SetShoot()
         {
-            _characterAnimator.SetBool(_shootHash, isShooting);
-        }
-
-        public void SetDead()
-        {
-            _characterAnimator.SetTrigger(_deadHash);
+            _characterAnimator.SetTrigger(_shootHash);
         }
     }
 }

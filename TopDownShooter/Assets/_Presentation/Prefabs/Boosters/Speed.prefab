@@ -146,9 +146,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5663b3be91bb91f42bf38fc6b5002389, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scale: 1
+  _scale: 1.5
   _boostTime: 10
   _isToRefresh: 0
+  _clueIfNeed: {fileID: 0}
   _sprite: {fileID: 8819319165391672773}
   _collider2D: {fileID: 5980579103736316680}
   _characterLayer:

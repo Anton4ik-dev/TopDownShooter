@@ -6,15 +6,14 @@ namespace Boosters
     {
         protected override void AddBoost(CharacterView characterView)
         {
-            characterView.MaxHealth += _scale;
-            characterView.Health += _scale;
+            characterView.MaxHealth += (int)_scale;
+            characterView.Health += (int)_scale;
         }
 
         protected override void RemoveBoost(CharacterView characterView)
         {
-            characterView.MaxHealth -= _scale;
-            characterView.Health -= _scale;
-            gameObject.SetActive(false);
+            characterView.MaxHealth -= (int)_scale;
+            characterView.Health -= (int)_scale;
         }
     }
 }

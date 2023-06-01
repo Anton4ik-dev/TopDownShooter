@@ -1,4 +1,5 @@
 using ScriptableObjects;
+using Services;
 using System.Collections;
 using UI;
 using UnityEngine;
@@ -13,7 +14,6 @@ namespace CharacterSystem
         private Camera _mainCamera;
         private CharacterAnimator _characterAnimator;
         private BulletPool _pool;
-        private float _shootDelay;
         private float _reloadTime;
         private int _maxHealth;
         private int _health;
@@ -21,6 +21,7 @@ namespace CharacterSystem
         private float _moveSpeed;
         private LoseView _loseView;
         private Slider _ammo;
+        private SoundService _soundService;
 
         public int MaxHealth
         {
@@ -37,9 +38,8 @@ namespace CharacterSystem
             set
             {
                 _health = value;
-                if (_health < 0)
+                if (_health <= 0)
                 {
-                    _characterAnimator.SetDead();
                     _health = 0;
                     _loseView.DrawLosePanel();
                 }
@@ -73,13 +73,12 @@ namespace CharacterSystem
             CharacterAnimator characterAnimator,
             BulletPool bulletPool, 
             CharacterDataSO characterDataSO,
-            LoseView loseView, Slider ammo)
+            LoseView loseView, Slider ammo, SoundService soundService)
         {
             _rb = rb;
             _mainCamera = mainCamera;
             _characterAnimator = characterAnimator;
             _pool = bulletPool;
-            _shootDelay = characterDataSO.ShootDelay;
             _reloadTime = characterDataSO.ReloadTime;
             _maxHealth = characterDataSO.MaxHealth;
             _health = characterDataSO.MaxHealth;
@@ -87,6 +86,7 @@ namespace CharacterSystem
             _moveSpeed = characterDataSO.MoveSpeed;
             _loseView = loseView;
             _ammo = ammo;
+            _soundService = soundService;
         }
 
         public void Move(float moveX, float moveY)
@@ -105,32 +105,21 @@ namespace CharacterSystem
             _mainCamera.transform.position = new Vector3(_rb.transform.position.x, _rb.transform.position.y, _mainCamera.transform.position.z);
         }
 
-        public IEnumerator ShootDelay()
+        public void Shoot()
         {
-            while(true)
-            {
-                if(_ammo.value != _ammo.minValue)
-                {
-                    _pool.GetFreeElement(_damage);
-                    _ammo.value--;
-                    ShootAnimate(true);
-                }
-                yield return new WaitForSeconds(_shootDelay);
-            }
+            _soundService.PlayClip(_soundService.Sounds.ShootClip);
+            _pool.GetFreeElement(_damage);
+            _ammo.value = _ammo.minValue;
+            _characterAnimator.SetShoot();
         }
 
         public IEnumerator Reload()
         {
-            while(_ammo.value != _ammo.maxValue)
+            while (_ammo.value != _ammo.maxValue)
             {
-                _ammo.value++;
-                yield return new WaitForSeconds(_reloadTime);
+                yield return new WaitForSeconds(_reloadTime / _reloadTime);
+                _ammo.value += _ammo.maxValue / _reloadTime;
             }
-        }
-
-        public void ShootAnimate(bool isShoot)
-        {
-            _characterAnimator.SetShoot(isShoot);
         }
     }
 }

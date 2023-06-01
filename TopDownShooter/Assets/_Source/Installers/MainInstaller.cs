@@ -29,8 +29,16 @@ public class MainInstaller : MonoInstaller
     [SerializeField] private BoostersSpawnerSO _boostersSpawnerSO;
     [SerializeField] private List<Transform> _boostersSpawnPoints;
 
+    [SerializeField] private SoundsSO _soundsSO;
+    [SerializeField] private AudioSource _audioSource;
+
     public override void InstallBindings()
     {
+        Container.Bind<LayerService>().AsSingle().NonLazy();
+        Container.Bind<SoundService>().AsSingle().NonLazy();
+        Container.Bind<SoundsSO>().FromInstance(_soundsSO).AsSingle();
+        Container.Bind<AudioSource>().FromInstance(_audioSource).AsSingle();
+
         Container.Bind<BulletPool>().AsSingle().NonLazy();
         Container.Bind<BulletPoolSO>().FromInstance(_bulletPoolSO).AsSingle();
         Container.Bind<Transform>().FromInstance(_bulletContainer).AsSingle();
@@ -46,8 +54,6 @@ public class MainInstaller : MonoInstaller
         Container.Bind<LoseView>().FromInstance(_loseView).AsSingle();
         Container.Bind<Slider>().FromInstance(_ammo).AsSingle();
         Container.Bind<WinView>().FromInstance(_winView).AsSingle();
-
-        Container.Bind<LayerService>().AsSingle().NonLazy();
 
         Container.Bind<BoostersSpawner>().AsSingle().NonLazy();
         Container.Bind<BoostersSpawnerSO>().FromInstance(_boostersSpawnerSO).AsSingle();

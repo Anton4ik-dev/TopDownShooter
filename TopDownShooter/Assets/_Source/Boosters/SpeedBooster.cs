@@ -1,4 +1,5 @@
 using CharacterSystem;
+using UnityEngine;
 
 namespace Boosters
 {
@@ -12,7 +13,6 @@ namespace Boosters
         protected override void RemoveBoost(CharacterView characterView)
         {
             characterView.MoveSpeed /= _scale;
-            gameObject.SetActive(false);
         }
     }
 }
