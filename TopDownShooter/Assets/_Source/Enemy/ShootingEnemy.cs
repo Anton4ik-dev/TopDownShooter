@@ -23,6 +23,7 @@ namespace EnemySystem
         [SerializeField] private GameObject _shootPoint;
         [SerializeField] private Transform gun;
         [SerializeField] private EnemySound enemySound;
+        [SerializeField] private EnemyAnimationSystem enemyAnimationSystem;
         [SerializeField] private GameObject sleepIcon;
 
         private int playerLayerMask;
@@ -64,11 +65,15 @@ namespace EnemySystem
                 if (distanceToPlayer <= radiusOfVision && distanceToPlayer >= startShootingRadius)
                 {
                     Rotate();
+                    //enemyAnimationSystem.Walk(true);
                     _agent.SetDestination(_player.transform.position);
+                    SetLookDirection();
                 }
                 else if (distanceToPlayer <= startShootingRadius)
                 {
                     Rotate();
+                    SetLookDirection();
+                    //enemyAnimationSystem.Walk();
                     _agent.ResetPath();
                     RaycastHit2D raycastHit2D = Physics2D.Raycast(_shootPoint.transform.position, _player.position - _shootPoint.transform.position, 100);
 
@@ -76,11 +81,25 @@ namespace EnemySystem
                         if (!_onCooldown)
                             StartCoroutine(Attack());
                 }
+                //enemyAnimationSystem.Walk();
+            }
+        }
+
+        private void SetLookDirection()
+        {
+            if (transform.position.x - _player.position.x > 0)
+            {
+                transform.rotation = new Quaternion(0, 1, 0, 180);
+            }
+            else
+            {
+                transform.rotation = new Quaternion(0, 1, 0, 0);
             }
         }
 
         private IEnumerator Attack()
         {
+            enemyAnimationSystem.Attack();
             _bulletPool.GetFreeElement(damage);
             _onCooldown = true;
             yield return new WaitForSeconds(cooldown);
@@ -94,6 +113,7 @@ namespace EnemySystem
             if (_currentHp <= 0)
             {
                 _isDeath = true;
+                enemyAnimationSystem.Death();
                 StartCoroutine(Death());
             }
         }

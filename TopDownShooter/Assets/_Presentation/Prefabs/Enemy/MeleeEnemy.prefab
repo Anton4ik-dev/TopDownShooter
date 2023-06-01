@@ -647,6 +647,8 @@ GameObject:
   - component: {fileID: 6001616648679736700}
   - component: {fileID: 4136826505214451309}
   - component: {fileID: 7237125048548908257}
+  - component: {fileID: -6510744811241536771}
+  - component: {fileID: 3479688085938366238}
   m_Layer: 6
   m_Name: MeleeEnemy
   m_TagString: Enemy
@@ -760,11 +762,13 @@ MonoBehaviour:
   hp: 100
   damage: 15
   radiusOfVision: 6
+  attackCooldown: 1
   healthBar: {fileID: 1367389323}
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
   enemySound: {fileID: 5776579856275958522}
+  enemyAnimationSystem: {fileID: 3479688085938366238}
   sleepIcon: {fileID: 4423631605258517895}
 --- !u!195 &4136826505214451309
 NavMeshAgent:
@@ -804,6 +808,39 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.7
+--- !u!95 &-6510744811241536771
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6001616648679736691}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d5f7df4634a33be45937f33adb046cdc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3479688085938366238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6001616648679736691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cafac70bc2535ad42b6f129fdd64178b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: -6510744811241536771}
 --- !u!1 &7435947299954759644
 GameObject:
   m_ObjectHideFlags: 0

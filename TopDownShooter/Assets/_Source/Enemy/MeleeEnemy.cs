@@ -13,10 +13,12 @@ namespace EnemySystem
         [SerializeField] private int hp;
         [SerializeField] private int damage;
         [SerializeField] private float radiusOfVision;
+        [SerializeField] private float attackCooldown;
         [Space]
         [SerializeField] private Slider healthBar;
         [SerializeField] private LayerMask playerLayer;
         [SerializeField] private EnemySound enemySound;
+        [SerializeField] private EnemyAnimationSystem enemyAnimationSystem;
         [SerializeField] private GameObject sleepIcon;
 
         private int playerLayerMask;
@@ -24,6 +26,7 @@ namespace EnemySystem
         private bool _isDeath;
         private int _currentHp;
         private NavMeshAgent _agent;
+        private bool onCoolown;
 
         [Inject]
         private Transform _player;
@@ -56,22 +59,40 @@ namespace EnemySystem
             }   
         }
 
-        private void OnCollisionEnter2D(Collision2D collision)
+        private void OnCollisionStay2D(Collision2D collision)
         {
             if (collision.gameObject.layer == playerLayerMask && !_isDeath)
             {
-                collision.gameObject.GetComponent<CharacterView>().Health -= damage;
+                if(!onCoolown)
+                    StartCoroutine(Attack(collision.gameObject));
             }
         }
 
-        public void Move()
+        private void Move()
         {
             float distanceToPlayer = Vector2.Distance(transform.position, _player.position);
             if (distanceToPlayer <= radiusOfVision)
+            {
+                SetLookDirection();
                 _agent.SetDestination(_player.transform.position);
+            } 
+            if(_agent.hasPath)
+                enemyAnimationSystem.Walk(true);
+            else
+                enemyAnimationSystem.Walk(false);
         }
 
-
+        private void SetLookDirection()
+        {
+            if(transform.position.x - _player.position.x > 0)
+            {
+                transform.rotation = new Quaternion(0, 1, 0, 0);
+            }
+            else
+            {
+                transform.rotation = new Quaternion(0, 1, 0, 180);
+            }
+        }
 
         public void GetDamage(int damage)
         {
@@ -80,12 +101,22 @@ namespace EnemySystem
             if (_currentHp <= 0)
             {
                 _isDeath = true;
+                enemyAnimationSystem.Death();
                 StartCoroutine(Death());
             }
                 
         }
 
-        public IEnumerator Death()
+        private IEnumerator Attack(GameObject target)
+        {
+            enemyAnimationSystem.Attack();
+            target.GetComponent<CharacterView>().Health -= damage;
+            onCoolown = true;
+            yield return new WaitForSeconds(attackCooldown);
+            onCoolown = false;
+        }
+
+        private IEnumerator Death()
         {
             GetComponent<SpriteRenderer>().color = Color.gray;
             sleepIcon.SetActive(true);

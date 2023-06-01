@@ -227,6 +227,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &383832348 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7174479917389171500, guid: a913e32881ddbc04aa70ba4e4da60f45, type: 3}
+  m_PrefabInstance: {fileID: 1837060439}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &520023442
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,11 +557,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6001616648679736689, guid: d36e482491922464786ab30797e6a882, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.3498992
+      value: 11.53
       objectReference: {fileID: 0}
     - target: {fileID: 6001616648679736689, guid: d36e482491922464786ab30797e6a882, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.1730013
+      value: -0.03
       objectReference: {fileID: 0}
     - target: {fileID: 6001616648679736689, guid: d36e482491922464786ab30797e6a882, type: 3}
       propertyPath: m_LocalPosition.z
@@ -891,10 +896,10 @@ MonoBehaviour:
   - {fileID: 173836748}
   - {fileID: 1981754763}
   - {fileID: 1805022901}
-  MaxAmountOfMeleeEnemy: 12
-  MinAmountOfMeleeEnemy: 8
-  MaxAmountOfShootingEnemy: 8
-  MinAmountOfShootingEnemy: 6
+  MaxAmountOfMeleeEnemy: 0
+  MinAmountOfMeleeEnemy: 0
+  MaxAmountOfShootingEnemy: 0
+  MinAmountOfShootingEnemy: 0
 --- !u!4 &991804891
 Transform:
   m_ObjectHideFlags: 0
@@ -1496,6 +1501,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1067061252173118478, guid: a913e32881ddbc04aa70ba4e4da60f45, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1067061252173118478, guid: a913e32881ddbc04aa70ba4e4da60f45, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1756916914012399918, guid: a913e32881ddbc04aa70ba4e4da60f45, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.52
@@ -1503,6 +1516,10 @@ PrefabInstance:
     - target: {fileID: 1756916914012399918, guid: a913e32881ddbc04aa70ba4e4da60f45, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 7174479917389171496, guid: a913e32881ddbc04aa70ba4e4da60f45, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.97
       objectReference: {fileID: 0}
     - target: {fileID: 8795296171492723031, guid: a913e32881ddbc04aa70ba4e4da60f45, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1523,7 +1540,7 @@ PrefabInstance:
     - target: {fileID: 8795296171724790596, guid: a913e32881ddbc04aa70ba4e4da60f45, type: 3}
       propertyPath: _player
       value: 
-      objectReference: {fileID: 1837060440}
+      objectReference: {fileID: 383832348}
     - target: {fileID: 8795296171724790596, guid: a913e32881ddbc04aa70ba4e4da60f45, type: 3}
       propertyPath: _mainCamera
       value: 
@@ -1610,11 +1627,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a913e32881ddbc04aa70ba4e4da60f45, type: 3}
---- !u!1 &1837060440 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1756916914012399914, guid: a913e32881ddbc04aa70ba4e4da60f45, type: 3}
-  m_PrefabInstance: {fileID: 1837060439}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1841746584
 GameObject:
   m_ObjectHideFlags: 0
@@ -2051,11 +2063,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1875659531, guid: e29311a4937da654695e04d649fc5893, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1875659531, guid: e29311a4937da654695e04d649fc5893, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6001616648679736689, guid: e29311a4937da654695e04d649fc5893, type: 3}
       propertyPath: m_RootOrder
@@ -2107,7 +2119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6001616648679736691, guid: e29311a4937da654695e04d649fc5893, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6001616648679736700, guid: e29311a4937da654695e04d649fc5893, type: 3}
       propertyPath: playerTag
